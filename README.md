@@ -12,10 +12,7 @@ Go to the [releases](https://github.com/trdwll/EOSBridge/releases) page and down
 
 ## Usage
 
-Using EOSBridge is actually really easy.
-
-- Edit your `DefaultEngine.ini` and make sure the Steam config exists like below.
-- Open your project and start using EOSBridge.
+Coming soon
 
 
 ## Contributing
