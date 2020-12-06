@@ -11,9 +11,17 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'C:\\build-scripts\\EOSBridge-build.bat'
+        bat "py -u C:\\jenkins.py EOSBridge Build \"%WORKSPACE%\""
       }
     }
 
+    stage('Publish') {
+      when {
+        branch "main"
+      }
+      steps {
+        bat "py -u C:\\jenkins.py EOSBridge Publish \"%WORKSPACE%\""
+      }
+    }
   }
 }
